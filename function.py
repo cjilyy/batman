@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
-print 'test'
+import requests
 
-def a():
-    print 1
+def get_request(url):
+    r = requests.get(url)
+    return r.status_code
