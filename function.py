@@ -8,5 +8,6 @@ def get_request(url):
     return r.status_code
 
 def get_response(url):
+    # get url response
     r = requests.get(url):
     return r.content
